@@ -1,7 +1,7 @@
 
 # Self-Evaluating AI Lesson Generator
 
-A Python + OpenAI Responses API project that creates a beginner lesson, evaluates it against a strict binary rubric, regenerates failed lessons (maximum two retries), and stores rejection history and persistent improvement memory.
+A Python-based AI lesson generation system using OpenRouter API. It creates beginner-friendly lessons, evaluates them against a strict binary rubric, regenerates failed lessons (maximum two retries), and maintains rejection history with persistent improvement memory.
 
 ## Architecture
 
@@ -13,7 +13,7 @@ A Python + OpenAI Responses API project that creates a beginner lesson, evaluate
 ## Requirements
 
 - Python 3.10+
-- OpenAI API key and API access
+- OpenRouter API key and API access
 - Internet connection for API calls
 
 ## Setup
@@ -34,16 +34,20 @@ macOS/Linux:
 source .venv/bin/activate
 ```
 
-Install packages:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create your local `.env` file by copying `.env.example`, then add your API key. The agents load this file automatically. Never commit `.env` or share your key.
+Create a .env file using .env.example as a template.
+
+Add your OpenRouter API key and the required configuration.
+
+Important: Never upload your .env file or share your API key publicly.
 
 ## Run
-
+Generate a lesson:
 ```bash
 python main.py --topic "Introduction to RAG"
 ```
@@ -59,9 +63,9 @@ The demo fault is deliberately added only to the first draft. The evaluator shou
 ## Outputs
 
 - `outputs/final_lesson.md`: saved only after all checks pass.
-- `outputs/rejection_log.json`: failed attempts, reasons, and requested changes.
-- `outputs/last_evaluation.json`: final structured evaluation.
-- `memory/failure_memory.json`: persistent counts and learned improvement rules.
+- `outputs/rejection_log.json`: stores failed attempts, reasons, and requested changes.
+- `outputs/last_evaluation.json`: stores the final structured evaluation.
+- `memory/failure_memory.json`: stores persistent failure counts and learned improvement rules.
 
 ## Design decisions and trade-offs
 
@@ -74,4 +78,4 @@ The demo fault is deliberately added only to the first draft. The evaluator shou
 
 ## Important
 
-This is an assignment prototype, not a guarantee of factual correctness. Review the final lesson and logs before submission. The API model name can be changed in `agents/generator.py` and `agents/evaluator.py` if it is unavailable to your account.
+This is an assignment prototype, not a guarantee of factual correctness. Review the final lesson and logs before submission. The AI models can be configured through the model settings in `agents/generator.py` and `agents/evaluator.py`, depending on model availability through OpenRouter.
