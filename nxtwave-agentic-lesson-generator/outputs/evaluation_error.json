@@ -1,0 +1,5 @@
+{
+  "attempt": 1,
+  "status": "EVALUATION_ERROR",
+  "reason": "Evaluator failed after its retries: Missing or unexpected rubric checks."
+}

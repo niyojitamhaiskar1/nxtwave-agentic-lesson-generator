@@ -1,0 +1,1 @@
+See the strict binary evaluator instructions and rubric in agents/evaluator.py and config/rubric.json.

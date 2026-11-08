@@ -1,0 +1,1 @@
+See the generator instructions in agents/generator.py. Keep prompts version-controlled and update them after reviewing rejection logs.

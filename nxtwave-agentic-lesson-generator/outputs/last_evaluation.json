@@ -1,0 +1,50 @@
+{
+  "decision": "PASS",
+  "checks": [
+    {
+      "check": "Accuracy and grounded explanation: All technical explanations must be factually correct. No misleading claims.",
+      "status": "PASS",
+      "reason": "The lesson correctly explains RAG as Retrieval, Augmented, Generation and accurately describes its function of combining a model's knowledge with external documents to reduce hallucinations. The worked example and limitations are factually sound."
+    },
+    {
+      "check": "Beginner-friendly language: Use simple English suitable for an Indian 12th-grade student with limited English. Explain difficult words.",
+      "status": "PASS",
+      "reason": "The lesson uses simple, everyday language. Difficult terms like 'hallucination', 'weights', and 'context' are explained in plain language (e.g., 'invents facts that are not true', 'brain weights', 'background situation')."
+    },
+    {
+      "check": "Relatable worked example: Include at least one realistic everyday example and explain it step by step.",
+      "status": "PASS",
+      "reason": "The lesson provides a step-by-step worked example using a Math formula (area of a circle) from a student's paper, which is realistic and relatable."
+    },
+    {
+      "check": "Why the topic matters: Explain the problem the topic solves and why it is useful.",
+      "status": "PASS",
+      "reason": "The lesson clearly explains that RAG solves the problem of outdated information and hallucinations, making the computer always check its current documents before answering."
+    },
+    {
+      "check": "Complete step-by-step workflow: Explain the complete process in the correct order without skipping important steps.",
+      "status": "PASS",
+      "reason": "The workflow is presented in 5 clear steps: asking a question, retrieval, getting relevant info, reading context, and generating the answer. No important steps are skipped."
+    },
+    {
+      "check": "Key concepts explained: Explain every important technical term in simple language when it is first introduced.",
+      "status": "PASS",
+      "reason": "Terms like Retrieval, Relevant information, Context, Generation, Searcher, Source Documents, and Brain are all defined simply upon introduction."
+    },
+    {
+      "check": "Limitations and uncertainty: Explain important limitations and avoid promising guaranteed results.",
+      "status": "PASS",
+      "reason": "The lesson explicitly states that RAG does not train the computer, does not guarantee answers are true, and only knows what is shown to it. It avoids making any false promises."
+    },
+    {
+      "check": "Coherent teaching flow: Arrange explanations logically, from basic ideas to more advanced ideas.",
+      "status": "PASS",
+      "reason": "The lesson flows logically from what RAG is, to why it is useful, key parts, how it works, a worked example, limitations, and finally recap and questions."
+    },
+    {
+      "check": "Standalone lesson with recap and questions: Include an introduction, complete explanation, short recap, and at least three self-check questions.",
+      "status": "PASS",
+      "reason": "The lesson includes an introduction, complete explanation, a short recap, and exactly three self-check questions with answers."
+    }
+  ]
+}
